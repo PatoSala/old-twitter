@@ -8,21 +8,13 @@ function navigation(route) {
         }
     }
 
-    if (route === "login") {
+    if (route === "auth") {
         if (location.href.includes("/views")) {
-            location.href = "./login.html";
+            location.href = "./auth.html";
         }
         else {
-            location.href = "./views/login.html";
+            location.href = "./views/auth.html";
         }
     }
 
-    if (route === "register") {
-        if (location.href.includes("/views")) {
-            location.href = "./register.html";
-        }
-        else {
-            location.href = "./views/register.html";
-        }
-    }
 }

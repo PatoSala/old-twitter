@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Arial';
     margin: 0px;
+    background-color: #f5f8fa;
 }
 
 .twitter-icon-container {
@@ -12,9 +12,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0px
+    margin: 0px;
+    color: #292F33;
 }
 
 p {
-    margin: 0px
+    margin: 0px;
+    color: #66757f;
 }
