@@ -1,0 +1,16 @@
+.header {
+    padding: 5px;
+    height: 35px;
+    padding-inline: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-btn {
+    height: 30px;
+}
+
+.register-btn {
+    height: 30px;
+}
