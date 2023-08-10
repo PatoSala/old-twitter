@@ -12,6 +12,12 @@
     position: fixed;
 }
 
+.twitter-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .login-btn {
     height: 30px;
     background-color: #4bacd2;
