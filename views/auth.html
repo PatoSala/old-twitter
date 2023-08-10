@@ -34,13 +34,7 @@
         let loginBtn = document.querySelector(".login-btn");
 
         loginBtn.onclick = async function() {
-            let data = await login(email.value, password.value);
-            console.log(data);
-
-            if (data.length > 0) {
-                session = data[0];
-                navigation('home');
-            }
+            await login(email.value, password.value);
         }
 
     </script>

@@ -11,5 +11,9 @@ async function login(email, password) {
     });
 
     let data = await response.json();
-    return data;
+
+    if (data.length > 0) {
+        sessionStorage.setItem("session", JSON.stringify(data[0]));
+        navigation("home");
+    }
 }

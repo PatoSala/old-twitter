@@ -18,11 +18,35 @@
     justify-content: center;
 }
 
+.left-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .login-btn {
-    height: 30px;
+    height: 32px;
     background-color: #4bacd2;
     color: white;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.4);
     padding-inline: 15px;
+}
+
+.new-tweet-btn {
+    height: 32px;
+    background-color: #4bacd2;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding-inline: 15px;
+}
+
+.profile-btn {
+    background-color: gray;
+    width: 32px;
+    height: 32px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 5px;
 }
