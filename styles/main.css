@@ -3,6 +3,7 @@ body {
     font-family: 'Arial';
     margin: 0px;
     background-color: #f5f8fa;
+    user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,4 +25,9 @@ main {
     border-radius: 8px;
     overflow: hidden;
     box-sizing: border-box;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
 }

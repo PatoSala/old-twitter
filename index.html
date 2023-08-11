@@ -20,7 +20,13 @@
         </div>
     
         <div class="left-buttons">
-            <div class="profile-btn"></div>
+            <div class="profile-btn">
+                <ul class="dropdown-menu">
+                    <li class="dropdown-option username">Username</li>
+                    <li class="dropdown-option logout">Salir</li>
+                </ul>
+            </div>
+
             <button class="login-btn" onclick="navigation('auth')">Ingresar</button>
         </div>
     </div>
@@ -28,6 +34,7 @@
     <div style="height: 60px"></div>
 
     <main>
+        <h2 style="color: #66757f">Inicio</h2>
         <div class="new-tweet-container">
             <div class="new-tweet-avatar"></div>
             <div class="new-tweet-content">
@@ -43,6 +50,7 @@
 
     <script src="./env.js"></script>
     <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/logout.js"></script>
     <script src="./components/postItem.js"></script>
     <script src="./scripts/fetchPosts.js"></script>
     <script src="./scripts/fetchUsers.js"></script>
@@ -52,8 +60,8 @@
     <script>
 
         window.onload = async function() {
-            let posts = await fetchPosts();
-            let users = await fetchUsers();
+            posts = await fetchPosts();
+            users = await fetchUsers();
 
             let postsContainer = document.querySelector('.posts-container');
             postsContainer.innerHTML = '';

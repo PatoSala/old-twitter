@@ -20,9 +20,9 @@ newTweetBtn.onclick = async () => {
 
         if (response.status === 201) {
             newTweetText.value = '';
-            
-            let posts = await fetchPosts();
-            let users = await fetchUsers();
+
+            posts = await fetchPosts();
+            users = await fetchUsers();
 
             let postsContainer = document.querySelector('.posts-container');
             postsContainer.innerHTML = '';
