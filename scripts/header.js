@@ -1,4 +1,4 @@
-let loginBtn = document.querySelector(".login-btn");
+let loginBtn = document.querySelector(".header-login-btn");
 let profileBtn = document.querySelector(".profile-btn");
 let dropdownMenu = document.querySelector(".dropdown-menu");
 let dropdownUsername = document.querySelector(".username");

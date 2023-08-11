@@ -1,0 +1,11 @@
+.title {
+    color: #66757f;
+    font-size: 22px;
+}
+
+.home-content {
+    margin-inline: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
