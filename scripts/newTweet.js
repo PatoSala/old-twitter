@@ -24,6 +24,8 @@ newTweetBtn.onclick = async () => {
             posts = await fetchPosts();
             users = await fetchUsers();
 
+            sortPosts(posts);
+
             let postsContainer = document.querySelector('.posts-container');
             postsContainer.innerHTML = '';
             

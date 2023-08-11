@@ -65,6 +65,10 @@
     font-size: 13px;
 }
 
+.username {
+    font-weight: bolder;
+}
+
 .dropdown-option:hover {
     background-color: #4bacd2;
     color: white;

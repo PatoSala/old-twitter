@@ -44,7 +44,7 @@
         </div>
     
         <div class="posts-container">
-            <p>Cargando...</p>
+            <p style="text-align: center; margin-top: 15px;">Cargando...</p>
         </div>
     </main>
 
@@ -57,11 +57,14 @@
     <script src="./scripts/header.js"></script>
     <script src="./scripts/newTweet.js"></script>
     <script src="./scripts/publishTweet.js"></script>
+    <script src="./scripts/sortPosts.js"></script>
     <script>
 
         window.onload = async function() {
             posts = await fetchPosts();
             users = await fetchUsers();
+
+            sortPosts(posts);
 
             let postsContainer = document.querySelector('.posts-container');
             postsContainer.innerHTML = '';
