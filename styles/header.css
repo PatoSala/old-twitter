@@ -34,15 +34,6 @@
     padding-inline: 15px;
 }
 
-.new-tweet-btn {
-    height: 32px;
-    background-color: #4bacd2;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    padding-inline: 15px;
-}
-
 .profile-btn {
     background-color: gray;
     width: 32px;

@@ -21,7 +21,6 @@
     
         <div class="left-buttons">
             <div class="profile-btn"></div>
-            <button class="new-tweet-btn">Tweet</button>
             <button class="login-btn" onclick="navigation('auth')">Ingresar</button>
         </div>
     </div>
@@ -31,11 +30,14 @@
     <main>
         <div class="new-tweet-container">
             <div class="new-tweet-avatar"></div>
-            <textarea type="text" class="new-tweet-text" placeholder="Que está pasando?!" maxlength="260"></textarea>
+            <div class="new-tweet-content">
+                <textarea type="text" class="new-tweet-text" placeholder="Que está pasando?!" maxlength="260"></textarea>
+                <button class="new-tweet-btn">Tweet</button>
+            </div>
         </div>
     
         <div class="posts-container">
-            <p>Loading...</p>
+            <p>Cargando...</p>
         </div>
     </main>
 
@@ -45,12 +47,9 @@
     <script src="./scripts/fetchPosts.js"></script>
     <script src="./scripts/fetchUsers.js"></script>
     <script src="./scripts/header.js"></script>
+    <script src="./scripts/newTweet.js"></script>
+    <script src="./scripts/publishTweet.js"></script>
     <script>
-
-        if (session != undefined) {
-            let newTweetAvatar = document.querySelector(".new-tweet-avatar");
-            newTweetAvatar.style.backgroundImage = `url(${session.avatar_url})`
-        }
 
         window.onload = async function() {
             let posts = await fetchPosts();
@@ -66,6 +65,8 @@
                     }
                 }
             }
+
+            console.log(posts);
         }
 
     </script>

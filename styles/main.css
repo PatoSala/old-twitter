@@ -20,7 +20,8 @@ button {
 }
 
 main {
-    margin-inline: 15px;
+    margin-inline: 10px;
     border-radius: 8px;
     overflow: hidden;
+    box-sizing: border-box;
 }
