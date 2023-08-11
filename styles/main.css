@@ -14,3 +14,13 @@ p {
     margin: 0px;
     color: #66757f;
 }
+
+button {
+    cursor: pointer;
+}
+
+main {
+    margin-inline: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}

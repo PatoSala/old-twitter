@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css"/>
     <link rel="stylesheet" href="./styles/postItem.css"/>
     <link rel="stylesheet" href="./styles/header.css"/>
+    <link rel="stylesheet" href="./styles/newTweetContainer.css"/>
     <link rel="stylesheet" href="./styles/postsContainer.css"/>
 </head>
 <body>
@@ -25,9 +26,18 @@
         </div>
     </div>
 
-    <div class="posts-container" style="padding-top: 55px">
-        <p>Loading...</p>
-    </div>
+    <div style="height: 60px"></div>
+
+    <main>
+        <div class="new-tweet-container">
+            <div class="new-tweet-avatar"></div>
+            <textarea type="text" class="new-tweet-text" placeholder="Que está pasando?!" maxlength="260"></textarea>
+        </div>
+    
+        <div class="posts-container">
+            <p>Loading...</p>
+        </div>
+    </main>
 
     <script src="./env.js"></script>
     <script src="./scripts/navigation.js"></script>
@@ -36,6 +46,11 @@
     <script src="./scripts/fetchUsers.js"></script>
     <script src="./scripts/header.js"></script>
     <script>
+
+        if (session != undefined) {
+            let newTweetAvatar = document.querySelector(".new-tweet-avatar");
+            newTweetAvatar.style.backgroundImage = `url(${session.avatar_url})`
+        }
 
         window.onload = async function() {
             let posts = await fetchPosts();
