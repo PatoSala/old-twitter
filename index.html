@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./styles/home.css"/>
     <link rel="stylesheet" href="./styles/postItem.css"/>
     <link rel="stylesheet" href="./styles/header.css"/>
-    <link rel="stylesheet" href="./styles/newTweetContainer.css"/>
-    <link rel="stylesheet" href="./styles/postsContainer.css"/>
+    <link rel="stylesheet" href="./styles/newTweetComponent.css"/>
+    <link rel="stylesheet" href="./styles/timeline.css"/>
 </head>
 <body>
     
@@ -36,17 +36,27 @@
 
     <main class="home-content">
         <h1 class="title">Inicio</h1>
+
+        <!-- New Tweet Box Starts -->
+
         <div class="new-tweet-container">
             <div class="new-tweet-avatar"></div>
+            <span class="new-tweet-chars">0/260</span>
             <div class="new-tweet-content">
                 <textarea type="text" class="new-tweet-text" placeholder="Que está pasando?!" maxlength="260"></textarea>
                 <button class="new-tweet-btn">Tweet</button>
             </div>
         </div>
+
+        <!-- New Tweet Box Ends -->
+
+        <!-- Timeline starts -->
     
-        <div class="posts-container">
+        <div class="timeline">
             <p style="text-align: center; margin-top: 15px;">Cargando...</p>
         </div>
+
+        <!-- Timeline ends -->
     </main>
 
     <script src="./env.js"></script>
@@ -56,7 +66,7 @@
     <script src="./scripts/fetchPosts.js"></script>
     <script src="./scripts/fetchUsers.js"></script>
     <script src="./scripts/header.js"></script>
-    <script src="./scripts/newTweet.js"></script>
+    <script src="./scripts/newTweetComponent.js"></script>
     <script src="./scripts/publishTweet.js"></script>
     <script src="./scripts/sortPosts.js"></script>
     <script>
@@ -67,7 +77,7 @@
 
             sortPosts(posts);
 
-            let postsContainer = document.querySelector('.posts-container');
+            let postsContainer = document.querySelector('.timeline');
             postsContainer.innerHTML = '';
             
             for (let i = 0; i < posts.length; i++) {
