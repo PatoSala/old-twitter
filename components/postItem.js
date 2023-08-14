@@ -7,9 +7,14 @@ function postItem(postData, userData) {
             </div>
             
             <div class="content-left">
-                <h4 class="owner-name">
-                    ${userData.username}
-                </h4>
+                <span>
+                    <h4 class="owner-name">
+                        ${userData.username}
+                    </h4>
+                    <span>
+                        ${postData.created_at}
+                    </span>
+                </span>
                 <p class="post-body">
                     ${postData.body}
                 </p>

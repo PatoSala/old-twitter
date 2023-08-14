@@ -71,7 +71,7 @@ button {
     gap: 8px;
 }
 
-.login-btn {
+/* .login-btn {
     background-color: #4bacd2;
     color: white;
     border-radius: 5px;
@@ -82,9 +82,9 @@ button {
 
 .login-btn:hover {
     background-color: #4bacd2;
-}
+} */
 
-.register-btn {
+.register-btn, .login-btn {
     background-image: linear-gradient(white, #f5f8fa);
     color: #66757f;
     font-weight: bold;
@@ -93,6 +93,6 @@ button {
     border: 1px solid #e1e8ed;
 }
 
-.register-btn:hover {
+.register-btn:hover, .login-btn:hover {
     background-image: linear-gradient(white, #e1e8ed);
 }

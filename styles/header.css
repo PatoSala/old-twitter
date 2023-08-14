@@ -26,12 +26,17 @@
 }
 
 .header-login-btn {
-    height: 32px;
-    background-color: #4bacd2;
-    color: white;
+    background-image: linear-gradient(white, #f5f8fa);
+    color: #66757f;
+    font-weight: bold;
+    font-size: 14px;
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    padding-inline: 15px;
+    border: 1px solid #e1e8ed;
+    padding: 8px 10px;
+}
+
+.header-login-btn:hover {
+    background-image: linear-gradient(white, #e1e8ed);
 }
 
 .profile-btn {
