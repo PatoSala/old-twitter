@@ -2,6 +2,7 @@ let newTweetContainer = document.querySelector(".new-tweet-container");
 let newTweetText = document.querySelector(".new-tweet-text");
 let newTweetAvatar = document.querySelector(".new-tweet-avatar");
 let newTweetBtn = document.querySelector(".new-tweet-btn");
+let newTweetChars = document.querySelector(".new-tweet-chars");
 
 if (session != undefined) {
     newTweetAvatar.style.backgroundImage = `url(${session.avatar_url})`
@@ -12,6 +13,11 @@ if (session != undefined) {
 newTweetText.onfocus = () => {
     newTweetText.style.height = '100px';
     newTweetBtn.style.display = 'unset';
+    newTweetChars.style.display = 'unset';
+
+    window.onkeyup = () => {
+        newTweetChars.innerText = newTweetText.value.length + "/260";
+    }
 }
 
 newTweetBtn.onclick = async () => {

@@ -20,6 +20,15 @@
     border-radius: 5px;
 }
 
+.new-tweet-chars {
+    display: none;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 36px;
+    min-width: 35px;
+    text-align: center;
+}
+
 .new-tweet-content {
     display: flex;
     flex-direction: column;
