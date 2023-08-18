@@ -26,16 +26,16 @@
             <div class="auth-forms">
                 <div class="login-form auth-section">
                     <h4 class="auth-form-title">Iniciar Sesión</h4>
-                    <input id="email" type="email" placeholder="Email"/>
-                    <input id="password" type="password" placeholder="Contraseña"/>
+                    <input class="login-email" type="email" placeholder="Email"/>
+                    <input class="login-password" type="password" placeholder="Contraseña"/>
                     <button class="login-btn">Ingresar</button>
                 </div>
     
                 <div class="register-form auth-section">
                     <h4 class="auth-form-title">Nuevo en Twitter? Crea una cuenta</h4>
-                    <input type="text" placeholder="Nombre completo"/>
-                    <input id="email" type="email" placeholder="Email"/>
-                    <input id="password" type="password" placeholder="Contraseña"/>
+                    <input class="register-username" type="text" placeholder="Nombre completo"/>
+                    <input class="register-email" type="email" placeholder="Email"/>
+                    <input class="register-password" type="password" placeholder="Contraseña"/>
                     <button class="register-btn">Registrarse</button>
                 </div>
             </div>
@@ -46,13 +46,23 @@
     <script src="../env.js"></script>
     <script src="../scripts/navigation.js"></script>
     <script src="../scripts/login.js"></script>
+    <script src="../scripts/register.js"></script>
     <script>
-        let email = document.querySelector("#email");
-        let password = document.querySelector("#password");
+        let loginEmail = document.querySelector(".login-email");
+        let loginPassword = document.querySelector(".login-password");
         let loginBtn = document.querySelector(".login-btn");
 
         loginBtn.onclick = async function() {
-            await login(email.value, password.value);
+            await login(loginEmail.value, loginPassword.value);
+        }
+
+        let registerUsername = document.querySelector(".register-username");
+        let registerEmail = document.querySelector(".register-email");
+        let registerPassword = document.querySelector(".register-password");
+        let registerBtn = document.querySelector(".register-btn");
+
+        registerBtn.onclick = async function() {
+            await register(registerUsername.value, registerEmail.value, registerPassword.value);
         }
 
     </script>

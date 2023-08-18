@@ -1,5 +1,5 @@
-async function publishTweet(ownerId, tweetContent) {
-    let url = 'https://serysjohsewrcxkonnum.supabase.co/rest/v1/twitts';
+async function createNewTweet(ownerId, tweetContent, mediaUrl) {
+    let url = 'https://serysjohsewrcxkonnum.supabase.co/rest/v1/tweets';
 
     let response = await fetch(url, {
         method: 'POST',
@@ -10,9 +10,9 @@ async function publishTweet(ownerId, tweetContent) {
         },
         body: JSON.stringify([{
             owner_id: ownerId,
-            body: tweetContent
+            body: tweetContent,
+            media_url: mediaUrl
         }])
     });
-
     return response;
 }

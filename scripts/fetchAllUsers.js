@@ -1,5 +1,5 @@
-async function fetchPosts() {
-    let url = 'https://serysjohsewrcxkonnum.supabase.co/rest/v1/twitts?select=*';
+async function fetchAllUsers() {
+    let url = 'https://serysjohsewrcxkonnum.supabase.co/rest/v1/users?select=*';
 
     let response = await fetch(url, {
         method: 'GET',

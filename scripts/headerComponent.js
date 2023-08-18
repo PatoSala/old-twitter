@@ -2,7 +2,9 @@ let loginBtn = document.querySelector(".header-login-btn");
 let profileBtn = document.querySelector(".profile-btn");
 let dropdownMenu = document.querySelector(".dropdown-menu");
 let dropdownUsername = document.querySelector(".username");
+let dropdownEditUsername = document.querySelector(".edit");
 let dropdownLogoutBtn = document.querySelector(".logout");
+
 
 if (session != undefined) {
     loginBtn.style.display = "none";
@@ -32,8 +34,20 @@ function toggleDropdown() {
     }
 }
 
-profileBtn.onclick = function() {
-    toggleDropdown();
+document.onclick = function(event) {
+    if (showDropdown) {
+        if (event.target.classList.contains("profile-btn") === false) {
+            toggleDropdown();
+        }
+    } else if (event.target.classList.contains("profile-btn")) {
+        toggleDropdown();
+    }
+}
+
+dropdownEditUsername.onclick = function() {
+    let editProfileDialog = document.querySelector(".edit-profile-dialog");
+    editProfileDialog.showModal();
+
 }
 
 dropdownLogoutBtn.onclick = function() {

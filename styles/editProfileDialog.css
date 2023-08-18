@@ -1,0 +1,68 @@
+.edit-profile-dialog {
+    background-color: white;
+    outline: 0px;
+    border: 0px;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.edit-avatar-container {
+    display: flex;
+    gap: 15px
+}
+
+.edit-avatar-img {
+    min-width: 80px;
+    width: 150px;
+    aspect-ratio: 1/1;
+    background-position:  center center;
+    background-size: cover;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+}
+
+.edit-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px
+}
+
+.edit-cancel-btn {
+    background-image: linear-gradient(white, #f5f8fa);
+    color: #66757f;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #e1e8ed;
+    padding: 8px 10px;
+}
+
+.edit-cancel-btn:hover {
+    background-image: linear-gradient(white, #e1e8ed);
+}
+
+.edit-save-btn {
+    background-image: linear-gradient(white, #f5f8fa);
+    color: #66757f;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #e1e8ed;
+    padding: 8px 10px;
+}
+
+.edit-save-btn:hover {
+    background-image: linear-gradient(white, #e1e8ed);
+}
+
+.edit-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.warning-msg {
+    font-size: 12px;
+    padding-top: 3px;
+}
