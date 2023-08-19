@@ -1,4 +1,4 @@
-function navigation(route) {
+function navigation(route, params) {
     if (route === "home") {
         if (location.href.includes("/views")) {
             location.href = "../index.html";

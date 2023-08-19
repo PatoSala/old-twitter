@@ -1,4 +1,4 @@
-function renderTweets(tweets, users) {
+function renderTimelineTweets(tweets, users) {
     let timeline = document.querySelector('.timeline');
     timeline.innerHTML = '';
     

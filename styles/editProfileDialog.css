@@ -14,7 +14,6 @@
 .edit-avatar-img {
     min-width: 80px;
     width: 150px;
-    aspect-ratio: 1/1;
     background-position:  center center;
     background-size: cover;
     border-radius: 8px;

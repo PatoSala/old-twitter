@@ -25,7 +25,7 @@ async function fetchRandomGif() {
     mediaUrl = data.data.images.original.url;
 
     newTweetMediaContainer.innerHTML = `
-        <img src="${data.data.images.original.url}" width="290px"/>
+        <img src="${data.data.images.original.url}" width="300px"/>
         <div class="remove-tweet-media-btn" onclick="removeMedia()">
             <svg width="20px" viewBox="0 0 24 24" aria-hidden="true" class="r-jwli3a r-4qtqp9 r-yyyyoo r-1hjwoze r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-12ym1je"><g><path fill="gray" d="M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z"></path></g></svg>
         </div class="remove-tweet-media-btn">

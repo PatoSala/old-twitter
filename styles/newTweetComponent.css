@@ -56,7 +56,6 @@
 
 .new-tweet-media-container {
     display: flex;
-    gap: 5px;
 }
 
 .remove-tweet-media-btn {

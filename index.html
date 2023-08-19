@@ -117,27 +117,34 @@
 
     <!-- Footer ends -->
 
+    <!-- Global Variables -->
     <script src="./env.js"></script>
-    <script src="./scripts/navigation.js"></script>
-    <script src="./scripts/logout.js"></script>
-    <script src="./scripts/tweetComponent.js"></script>
-    <script src="./scripts/fetchAllPosts.js"></script>
-    <script src="./scripts/fetchAllUsers.js"></script>
-    <script src="./scripts/fetchUserById.js"></script>
+
+    <!-- Utils -->
+    <script src="./utils/navigation.js"></script>
+    <script src="./utils/logout.js"></script>
+    <script src="./utils/fetchAllPosts.js"></script>
+    <script src="./utils/fetchAllUsers.js"></script>
+    <script src="./utils/fetchUserById.js"></script>
+    <script src="./utils/createNewTweet.js"></script>
+    <script src="./utils/sortPosts.js"></script>
+    <script src="./utils/renderTimelineTweets.js"></script>
+    <script src="./utils/updateSessionStorage.js"></script>
+
+    <!-- Scripts -->
     <script src="./scripts/headerComponent.js"></script>
-    <script src="./scripts/editProfile.js"></script>
+    <script src="./scripts/editProfileComponent.js"></script>
     <script src="./scripts/newTweetComponent.js"></script>
-    <script src="./scripts/createNewTweet.js"></script>
-    <script src="./scripts/sortPosts.js"></script>
-    <script src="./scripts/renderTweets.js"></script>
-    <script src="./scripts/updateSessionStorage.js"></script>
+    <script src="./scripts/tweetComponent.js"></script>
+
+
     <script>
 
         window.onload = async function() {
             tweets = await fetchAllPosts();
             users = await fetchAllUsers();
             sortPosts(tweets);
-            renderTweets(tweets, users);
+            renderTimelineTweets(tweets, users);
         }
 
     </script>
