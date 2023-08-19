@@ -1,0 +1,17 @@
+.load-tweets-box {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-top: 1px solid rgb(239, 243, 244);
+    border-left: 1px solid rgb(239, 243, 244);
+    border-right: 1px solid rgb(239, 243, 244);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.92);
+    color: #4bacd2;
+}
+
+.load-tweets-box:hover {
+    transition: 0.2s;
+    background-color: rgb(0, 0, 0, 0.03);
+}

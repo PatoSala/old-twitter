@@ -56,10 +56,11 @@
 
 .new-tweet-media-container {
     display: flex;
+    width: 280px;
 }
 
 .remove-tweet-media-btn {
-    width: 30px;
+    min-width: 30px;
     height: 30px;
     border-radius: 100%;
     display: flex;

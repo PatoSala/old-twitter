@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/editProfileDialog.css"/>
     <link rel="stylesheet" href="./styles/footer.css"/>
     <link rel="stylesheet" href="./styles/newTweetComponent.css"/>
+    <link rel="stylesheet" href="./styles/loadTweetsComponent.css"/>
     <link rel="stylesheet" href="./styles/timeline.css"/>
     <script src="https://kit.fontawesome.com/a7f33ed485.js" crossorigin="anonymous"></script>
 </head>
@@ -99,6 +100,13 @@
 
         <!-- New Tweet Box Ends -->
 
+        <!-- Load new tweets box -->
+
+        <div class="load-tweets-box">
+        </div>
+        
+        <!-- Load new tweets box ends -->
+
         <!-- Timeline starts -->
     
         <div class="timeline">
@@ -136,6 +144,7 @@
     <script src="./scripts/editProfileComponent.js"></script>
     <script src="./scripts/newTweetComponent.js"></script>
     <script src="./scripts/tweetComponent.js"></script>
+    <script src="./scripts/loadNewTweetsComponent.js"></script>
 
 
     <script>
@@ -143,8 +152,10 @@
         window.onload = async function() {
             tweets = await fetchAllPosts();
             users = await fetchAllUsers();
-            sortPosts(tweets);
             renderTimelineTweets(tweets, users);
+            setInterval(function() {
+                checkForNewTweets();
+            }, 300000);
         }
 
     </script>

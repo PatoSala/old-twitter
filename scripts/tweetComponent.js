@@ -24,7 +24,7 @@ function tweetComponent(tweetData, userData) {
         `
     } else {
         return `
-            <div class="post-item">
+            <div class="post-item" onclick="likePost('${tweetData.id}')">
                 <div class="content-right">
                     <div class="avatar-img" style="background-image: url(${userData.avatar_url});"></div>
                 </div>
