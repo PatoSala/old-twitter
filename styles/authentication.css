@@ -84,7 +84,7 @@ button {
     background-color: #4bacd2;
 } */
 
-.register-btn, .login-btn {
+.login-btn {
     background-image: linear-gradient(white, #f5f8fa);
     color: #66757f;
     font-weight: bold;
@@ -93,6 +93,19 @@ button {
     border: 1px solid #e1e8ed;
 }
 
-.register-btn:hover, .login-btn:hover {
+.register-btn {
+    background-image: linear-gradient(#ffeb02, #ffc044);
+    color: #33383b;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #fcb832;
+}
+
+.login-btn:hover {
     background-image: linear-gradient(white, #e1e8ed);
+}
+
+.register-btn:hover  {
+    background-image: linear-gradient(#ffeb02, #ebac00);
 }
