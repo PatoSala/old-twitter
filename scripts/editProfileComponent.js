@@ -56,7 +56,7 @@ async function uploadAndUpdateAvatar(file) {
 
     let url = `https://serysjohsewrcxkonnum.supabase.co/storage/v1/object/avatars/${session.user_id}`;
     let response = await fetch(url, {
-        method: 'PUT',
+        method: 'POST',
         headers: {
             'Cache-Control': `max-age=0`,
             Authorization: `Bearer ${apiKey}`,
