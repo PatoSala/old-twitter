@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./styles/newTweetComponent.css"/>
     <link rel="stylesheet" href="./styles/loadTweetsComponent.css"/>
     <link rel="stylesheet" href="./styles/timeline.css"/>
+    <link rel="stylesheet" href="./styles/tweetViewer.css"/>
+    <link rel="stylesheet" href="./styles/replies.css"/>
     <script src="https://kit.fontawesome.com/a7f33ed485.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -68,6 +70,12 @@
     </dialog>
 
     <!-- Edit profile ends -->
+
+    <!-- Tweet viwer starts -->
+
+    <dialog class="tweet-viewer"></dialog>
+
+    <!-- Tweet viwer ends -->
 
     <!-- Header ends -->
 
@@ -138,6 +146,10 @@
     <script src="./utils/sortPosts.js"></script>
     <script src="./utils/renderTimelineTweets.js"></script>
     <script src="./utils/updateSessionStorage.js"></script>
+    <script src="./utils/fetchTweetById.js"></script>
+    <script src="./utils/createNewComment.js"></script>
+    <script src="./utils/fetchCommentsByOriginTweetId.js"></script>
+    <script src="./utils/renderTweetReplies.js"></script>
 
     <!-- Scripts -->
     <script src="./scripts/headerComponent.js"></script>
@@ -145,6 +157,7 @@
     <script src="./scripts/newTweetComponent.js"></script>
     <script src="./scripts/tweetComponent.js"></script>
     <script src="./scripts/loadNewTweetsComponent.js"></script>
+    <script src="./scripts/commentComponent.js"></script>
 
 
     <script>
